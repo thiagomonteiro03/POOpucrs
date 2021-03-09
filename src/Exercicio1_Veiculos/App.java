@@ -1,3 +1,5 @@
+package Exercicio1_Veiculos;
+
 public class App{
     public static void main(String args[]){
         Placa p1 = new Placa("Brasil","ABC1R23");

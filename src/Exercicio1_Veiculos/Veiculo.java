@@ -1,3 +1,5 @@
+package Exercicio1_Veiculos;
+
 public class Veiculo{
     private final double consumoPorLitro = 10;
     private Placa placa;
