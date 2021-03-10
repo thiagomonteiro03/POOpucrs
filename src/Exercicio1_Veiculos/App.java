@@ -5,18 +5,25 @@ public class App{
         Placa p1 = new Placa("Brasil","ABC1R23");
         
         Veiculo v = new Veiculo(p1);
-        System.out.println("Dados do veiculo antes de abastecer:");
-        System.out.println(v);
-        System.out.println("----------------");
+        Veiculo v2 = new Veiculo(p1);
+        v2.setPais("Brasil");
 
-        v.abastece(65);
-        System.out.println("Dados do veiculo depois de abastecer:");
-        System.out.println(v);
-        System.out.println("----------------");
+        System.out.println(v.toString());
+        System.out.println("-------------------------------------------------------------------");
+        System.out.println(v2.toString());
 
-        v.dirige(250);
-        System.out.println("Dados do veiculo depois de percorrer 250Km:");
-        System.out.println(v);
-        System.out.println("----------------");
-        }
+        // System.out.println("Dados do veiculo antes de abastecer:");
+        // System.out.println(v);
+        // System.out.println("----------------");
+
+        // v.abastece(65);
+        // System.out.println("Dados do veiculo depois de abastecer:");
+        // System.out.println(v);
+        // System.out.println("----------------");
+
+        // v.dirige(250);
+        // System.out.println("Dados do veiculo depois de percorrer 250Km:");
+        // System.out.println(v);
+        // System.out.println("----------------");
+         }
 }
