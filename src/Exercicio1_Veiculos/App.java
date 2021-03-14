@@ -21,9 +21,12 @@ public class App{
         v[4] = new Veiculo(p[4]);
 
         String placa = "";
+        int option = 0;
+
+        while(option==0){
         
         System.out.println("Selecione uma opção: \n1)Abastecer\n2)Dirigir\n3)Fim");
-        int option = Integer.parseInt(in.nextLine());
+        option = Integer.parseInt(in.nextLine());
 
         switch(option){
 
@@ -40,6 +43,7 @@ public class App{
                 }
                 else if((i==v.length-1)&&stats) System.out.println("Veículo não encontrado.");
             }
+            option = 0;
             break;
 
             case 2:
@@ -55,6 +59,7 @@ public class App{
                 }
                 else if((i==v.length-1)&&stats) System.out.println("Veículo não encontrado.");
             }
+            option = 0;
             break;
 
             case 3:
@@ -65,7 +70,12 @@ public class App{
             }
             break;
 
+            default: 
+            option = 0;
+
         }
+
+    }
 
         // System.out.println("Dados do veiculo antes de abastecer:");
         // System.out.println(v);
