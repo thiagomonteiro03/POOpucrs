@@ -70,8 +70,8 @@ public class App{
             }
             break;
 
-            default: 
-            option = 0;
+            // default: 
+            // option = 0;
 
         }
 
